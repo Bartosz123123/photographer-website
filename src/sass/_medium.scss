@@ -1,0 +1,26 @@
+@media (min-width: 768px) {
+	.nav {
+		.nav-bar {
+			.img-box {
+				.link {
+					.img {
+						width: 193px;
+						height: 56px;
+					}
+				}
+			}
+
+			.mobile-btn {
+				display: none;
+			}
+
+			.desktop {
+				display: flex;
+			}
+		}
+
+		.mobile-dropdown {
+			display: none;
+		}
+	}
+}

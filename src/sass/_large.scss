@@ -1,0 +1,16 @@
+@media (min-width: 1024px) {
+	.nav {
+		.nav-bar {
+			padding: 1.25em 6em;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.nav {
+		.nav-bar {
+			padding: 1.25em 0;
+			max-width: var(--max-width);
+		}
+	}
+}
