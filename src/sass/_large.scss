@@ -4,6 +4,16 @@
 			padding: 1.25em 6em;
 		}
 	}
+
+	.main {
+		.emotions {
+			.container {
+				.title-box {
+					padding-bottom: 60px;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -11,6 +21,38 @@
 		.nav-bar {
 			padding: 1.25em 0;
 			max-width: var(--max-width);
+		}
+	}
+
+	.main {
+		.emotions {
+			.container {
+				.title-box {
+					padding-bottom: 80px;
+				}
+
+				.img-box {
+					max-width: var(--max-width);
+					.frame-img {
+						width: 771px;
+						height: 514px;
+					}
+
+					.area-text {
+						padding-top: 40px;
+						width: 549px;
+						height: 403px;
+
+						.title {
+							font-size: 4rem;
+						}
+
+						.text {
+							font-size: 1.8rem;
+						}
+					}
+				}
+			}
 		}
 	}
 }
