@@ -64,7 +64,20 @@
 		}
 
 		.second-hero {
+			margin-bottom: -15vh;
 			height: 55vh;
+		}
+
+		.section-portfolio {
+			.container {
+				.title-box {
+					padding-bottom: 40px;
+					.section-title {
+						padding-top: 15px;
+						font-size: 4.8rem;
+					}
+				}
+			}
 		}
 	}
 }

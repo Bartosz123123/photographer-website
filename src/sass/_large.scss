@@ -13,6 +13,28 @@
 				}
 			}
 		}
+
+		.section-portfolio {
+			.container {
+				.slider {
+					margin: 0 auto;
+					width: 800px;
+				}
+
+				.gallery {
+					margin: 0 auto;
+					max-width: var(--max-width);
+
+					.gallery-img {
+						padding-top: 10px;
+					}
+
+					.gallery-img:nth-child(even) {
+						padding-left: 10px;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -56,6 +78,7 @@
 		}
 
 		.second-hero {
+			margin-bottom: -10vh;
 			height: 65vh;
 		}
 	}
