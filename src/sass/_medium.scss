@@ -79,5 +79,37 @@
 				}
 			}
 		}
+
+		.for-you {
+			.container {
+				.img-box {
+					display: block;
+					.frame-img {
+						margin: 0 auto;
+						width: 95%;
+
+						.img {
+							width: 100%;
+						}
+					}
+
+					.area-text {
+						position: relative;
+						width: 80%;
+						height: 419px;
+						text-align: center;
+
+						.text {
+							padding-bottom: 40px;
+						}
+
+						.btn {
+							margin: 0 auto;
+							max-width: 210px;
+						}
+					}
+				}
+			}
+		}
 	}
 }

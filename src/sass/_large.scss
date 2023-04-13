@@ -35,6 +35,23 @@
 				}
 			}
 		}
+
+		.for-you {
+			.container {
+				.img-box {
+					.frame-img {
+						width: 100%;
+						.img {
+							background-image: url('https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_131/sesja-malrzenskja.jpg');
+						}
+					}
+
+					.area-text {
+						width: 85%;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -80,6 +97,26 @@
 		.second-hero {
 			margin-bottom: -10vh;
 			height: 65vh;
+		}
+
+		.for-you {
+			.container {
+				max-width: 90%;
+				.img-box {
+					display: flex;
+
+					max-width: 1350px;
+					.frame-img {
+						margin: 0;
+					}
+
+					.area-text {
+						position: absolute;
+						width: 671px;
+						height: 470px;
+					}
+				}
+			}
 		}
 	}
 }
