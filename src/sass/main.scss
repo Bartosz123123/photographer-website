@@ -441,6 +441,76 @@ body {
 	}
 }
 
+.footer {
+	background-image: url('https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/.CURRENT_LIB/2000_jzq006_img_1bc6cb525d1ed1a134f8ba75d94d0111.webp');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.container {
+		margin: 0 auto;
+		padding: 30px 5px 20px;
+
+		.box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+
+			.boxes {
+				margin-bottom: 20px;
+				text-align: center;
+			}
+
+			.img {
+				width: 158px;
+				height: 53px;
+				background-image: url('https://szablon2.lewdesign.pl/lib/jzq006/logo-foto-gotowe-l4ntx942.svg');
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			.text-box {
+				padding-bottom: 5px;
+				.text {
+					padding: 3px 0;
+					font-size: 1.8rem;
+					font-family: var(--lexen-font);
+				}
+			}
+
+			.social-box {
+				padding-bottom: 20px;
+				.social-links {
+					display: inline-flex;
+					justify-content: center;
+					align-items: center;
+					width: 30px;
+					height: 30px;
+					color: #fafafa;
+					background-color: var(--light-black);
+					border-radius: 50%;
+				}
+			}
+		}
+		.medium {
+			display: none;
+		}
+		.footer-text {
+			font-family: var(--open-font);
+			font-size: 1.2rem;
+			text-align: center;
+			line-height: 14px;
+
+			.text {
+				color: var(--light-black);
+				.link {
+					color: var(--light-black);
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
 @keyframes showGalleryAndCarousel {
 	from {
 		opacity: 0;

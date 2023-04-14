@@ -112,4 +112,41 @@
 			}
 		}
 	}
+
+	.footer {
+		.container {
+			max-width: 768px;
+			.small {
+				display: none;
+			}
+
+			.medium {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 80px;
+
+				.mini-container {
+					.img {
+						width: 178px;
+						height: 50px;
+					}
+
+					.social-box {
+						padding-bottom: 0;
+						margin-bottom: 0;
+						.ig {
+							margin: 0 20px;
+						}
+					}
+				}
+
+				.text-box {
+					margin-bottom: 0;
+					text-align: left;
+				}
+			}
+		}
+	}
 }

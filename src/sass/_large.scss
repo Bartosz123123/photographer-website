@@ -119,4 +119,24 @@
 			}
 		}
 	}
+
+	.footer {
+		.container {
+			max-width: var(--max-width);
+			.medium {
+				display: none;
+			}
+
+			.large {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				margin: 0;
+
+				.text-box {
+					text-align: left;
+				}
+			}
+		}
+	}
 }
