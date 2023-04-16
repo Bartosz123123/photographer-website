@@ -77,6 +77,22 @@
 						font-size: 4.8rem;
 					}
 				}
+				.slider {
+					.btn {
+						padding: 1em 1.2em;
+					}
+				}
+
+				.popup {
+					.close-popup {
+						top: 90px;
+						padding: 5px 25px;
+					}
+
+					.btn {
+						padding: 1em 1.2em;
+					}
+				}
 			}
 		}
 
@@ -110,6 +126,15 @@
 					}
 				}
 			}
+		}
+
+		.parallax-hero {
+			display: none;
+		}
+
+		.medium-hero {
+			display: block;
+			background-attachment: fixed;
 		}
 	}
 

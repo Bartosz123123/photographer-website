@@ -118,6 +118,17 @@
 				}
 			}
 		}
+
+		.section-portfolio {
+			.container {
+				.popup {
+					backdrop-filter: blur(10px);
+					.popup-img {
+						max-width: 1050px;
+					}
+				}
+			}
+		}
 	}
 
 	.footer {
@@ -132,6 +143,17 @@
 				justify-content: space-between;
 				align-items: center;
 				margin: 0;
+
+				.img,
+				.social-box {
+					transform: translateX(-50%);
+				}
+
+				.social-box {
+					.ig {
+						margin: 0 20px;
+					}
+				}
 
 				.text-box {
 					text-align: left;
