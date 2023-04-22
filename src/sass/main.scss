@@ -36,10 +36,11 @@ body {
 
 .nav {
 	position: fixed;
-	z-index: 100;
+	top: 0;
 	width: 100%;
 	background-color: #fff;
 	box-shadow: 0 -5px 15px -2px var(--black);
+	z-index: 100;
 
 	.nav-bar {
 		display: flex;
@@ -63,7 +64,7 @@ body {
 			height: 29px;
 			background: none;
 			border: none;
-			z-index: 10;
+			z-index: 100;
 			cursor: pointer;
 
 			.bar {
@@ -528,6 +529,10 @@ body {
 	.medium-hero {
 		display: none;
 	}
+}
+
+.portfolio-main {
+	margin-top: 50px;
 }
 
 .footer {

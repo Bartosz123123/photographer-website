@@ -16,11 +16,12 @@ const gallery = document.querySelector('.gallery');
 const slider = document.querySelector('.slider');
 
 const thumbnails = document.querySelectorAll('.gallery-img');
+// const popup = document.querySelector('.popup');
 const popup = document.querySelector('.popup');
 const closePopupBtn = document.querySelector('.close-popup');
 const imgInPopup = document.querySelector('.popup-img');
+const popupArrowRight = document.querySelector('.popup-arrow-right');
 const popupArrowLeft = document.querySelector('.popup-arrow-left');
-const popupArrowRgiht = document.querySelector('.popup-arrow-right');
 const body = document.querySelector('.body');
 let currentImageIndex;
 
@@ -71,7 +72,10 @@ const changeImages = () => {
 		index = carouselImages.length - 1;
 	}
 
-	sliderBox.style.transform = `translateX(${-index * carouselWidth}%)`;
+	// sliderBox.style.transform = `translateX(${-index * carouselWidth}%)`;
+	if (sliderBox) {
+		sliderBox.style.transform = `translateX(${-index * carouselWidth}%)`;
+	}
 };
 
 const handleRightArrow = () => {
@@ -139,14 +143,35 @@ thumbnails.forEach((thumbnail, index) => {
 	});
 });
 
-popupArrowRgiht.addEventListener('click', handleRightArrowPopup);
-popupArrowLeft.addEventListener('click', handleLeftArrowPopup);
-closePopupBtn.addEventListener('click', closePopup);
-showAllBtn.addEventListener('click', swapGalleryAndCarousel);
-leftBtn.addEventListener('click', handleLeftArrow);
-rightBtn.addEventListener('click', handleRightArrow);
+// popupArrowRight.addEventListener('click', handleRightArrowPopup);
+if (popupArrowRight) {
+	popupArrowRight.addEventListener('click', handleRightArrowPopup);
+}
+
+if (popupArrowLeft) {
+	popupArrowLeft.addEventListener('click', handleLeftArrowPopup);
+}
+if (closePopupBtn) {
+	closePopupBtn.addEventListener('click', closePopup);
+}
+if (showAllBtn) {
+	showAllBtn.addEventListener('click', swapGalleryAndCarousel);
+}
+if (leftBtn) {
+	leftBtn.addEventListener('click', handleLeftArrow);
+}
+if (rightBtn) {
+	rightBtn.addEventListener('click', handleRightArrow);
+}
 document.addEventListener('scroll', handleArrowOnScroll);
 burgerBtn.addEventListener('click', handleNav);
-popup.addEventListener('click', (e) =>
-	e.target === popup ? closePopup() : false
-);
+// popup.addEventListener('click', () =>
+// 	e.target === popup ? closePopup() : false
+// );
+if (popup) {
+	popup.addEventListener('click', (e) => {
+		if (e.target === popup) {
+			closePopup();
+		}
+	});
+}
