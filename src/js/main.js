@@ -1,6 +1,6 @@
 const burgerBtn = document.querySelector('.burger-btn');
 const dropdown = document.querySelector('.dropdown');
-const arrow = document.querySelector('.icon');
+const arrows = document.querySelectorAll('.icon');
 const heroes = document.querySelectorAll('.parallax-hero');
 
 const sliderBox = document.querySelector('.slider-box');
@@ -100,13 +100,15 @@ const handleNav = () => {
 
 const handleArrowOnScroll = () => {
 	const top = window.scrollY;
-	if (top > 80) {
-		arrow.classList.add('hide-arrow');
-		arrow.classList.remove('show-arrow');
-	} else if (top < 45) {
-		arrow.classList.add('show-arrow');
-		arrow.classList.remove('hide-arrow');
-	}
+	arrows.forEach((arrow) => {
+		if (top > 80) {
+			arrow.classList.add('hide-arrow');
+			arrow.classList.remove('show-arrow');
+		} else if (top < 45) {
+			arrow.classList.add('show-arrow');
+			arrow.classList.remove('hide-arrow');
+		}
+	});
 };
 
 window.addEventListener('scroll', () => {
