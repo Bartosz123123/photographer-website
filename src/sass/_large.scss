@@ -131,6 +131,46 @@
 		}
 	}
 
+	.portfolio-main {
+		.portfolio-container {
+			max-width: 1050px;
+
+			.title-box {
+				margin-bottom: 20px;
+				.title {
+					font-size: 6rem;
+				}
+			}
+			.container-box {
+				gap: 0;
+				.imgs-box {
+					margin-bottom: 30px;
+					max-width: 500px;
+					max-height: 340px;
+
+					.img-frame {
+						.img-link {
+							height: 270px;
+						}
+
+						.text-box {
+							.link-text {
+								padding: 0;
+								padding-top: 5px;
+								text-align: center;
+								font-weight: bold;
+							}
+
+							.mini-text {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	.footer {
 		.container {
 			max-width: var(--max-width);

@@ -138,6 +138,24 @@
 		}
 	}
 
+	.portfolio-main {
+		padding-top: 100px;
+		.portfolio-container {
+			max-width: 770px;
+			margin: 0 auto;
+			.container-box {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 10px;
+
+				.imgs-box {
+					max-width: 380px;
+					max-height: 458px;
+				}
+			}
+		}
+	}
+
 	.footer {
 		.container {
 			max-width: 768px;

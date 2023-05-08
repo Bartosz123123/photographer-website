@@ -9,6 +9,8 @@
 :root {
 	--black: #000;
 	--light-black: #333;
+	--mini-text-color: #757575;
+	--main-color: #ebebeb;
 	--lexen-font: 'Lexend Deca', sans-serif;
 	--open-font: 'Open Sans', sans-serif;
 	--max-width: 1200px;
@@ -532,7 +534,106 @@ body {
 }
 
 .portfolio-main {
-	margin-top: 50px;
+	padding-top: 63px;
+	padding-bottom: 60px;
+	background-color: var(--main-color);
+	.portfolio-container {
+		padding-bottom: 60px;
+
+		.title-box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100px;
+			width: 100%;
+
+			.title {
+				font-size: 3rem;
+				font-family: var(--lexen-font);
+				font-weight: 300;
+				color: var(--light-black);
+			}
+		}
+		.container-box {
+			.imgs-box {
+				margin: 0 auto;
+				margin-bottom: 45px;
+				// width: 100%;
+				width: 100%;
+				height: 100%;
+				max-width: 320px;
+				max-height: 368px;
+				.img-frame {
+					margin: 0 auto;
+					padding: 20px;
+					height: 100%;
+
+					background-color: #fff;
+
+					.img-link {
+						display: block;
+						// width: 280px;
+						width: 100%;
+						height: 220px;
+						overflow: hidden;
+
+						.img {
+							width: 100%;
+							height: 100%;
+							background-position: center;
+							background-size: cover;
+							background-repeat: no-repeat;
+							transition: transform 0.3s;
+						}
+
+						.img-one {
+							background-image: url('https://szablon2.lewdesign.pl/lib/jzq006/unsplash-image-k95cs77i.jpg');
+						}
+
+						.img-two {
+							background-image: url('https://szablon2.lewdesign.pl/lib/jzq006/unsplash-image-k95cxfso.jpg');
+						}
+
+						.img-three {
+							background-image: url('https://szablon2.lewdesign.pl/lib/jzq006/unsplash-image-k95d831h.jpg');
+						}
+
+						.img-four {
+							background-image: url('https://szablon2.lewdesign.pl/lib/jzq006/unsplash-image-k95dd6z5.jpg');
+						}
+
+						.img:hover {
+							transform: scale(1.3);
+						}
+					}
+
+					.text-box {
+						.mini-text,
+						.link-text {
+							padding: 20px 10px 5px;
+							font-weight: 400;
+						}
+						.link-text {
+							display: block;
+							font-size: 2.5rem;
+							font-family: var(--lexen-font);
+							color: var(--light-black);
+							text-decoration: none;
+						}
+
+						.mini-text {
+							font-family: var(--open-font);
+							font-size: 2rem;
+							color: var(--mini-text-color);
+						}
+					}
+				}
+			}
+			.imgs-box:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 .footer {
@@ -540,6 +641,8 @@ body {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	box-shadow: 0px -1px 7px rgba(145, 145, 145, 1);
+
 	.container {
 		margin: 0 auto;
 		padding: 30px 5px 20px;
