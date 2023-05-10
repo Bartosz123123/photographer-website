@@ -53,6 +53,32 @@
 			}
 		}
 	}
+	.price-main {
+		.container {
+			.center-box {
+				.title-box {
+					.title {
+						font-size: 4.8rem;
+					}
+				}
+				.text-box-title {
+					max-width: var(--max-width);
+				}
+
+				.price-box {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					gap: 25px;
+					margin: 0 auto;
+					max-width: var(--max-width);
+					.wedding-session-box {
+						min-width: 557px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -179,6 +205,7 @@
 			}
 
 			.large {
+				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
 				align-items: center;

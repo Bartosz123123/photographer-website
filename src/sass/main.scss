@@ -636,12 +636,73 @@ body {
 	}
 }
 
+.price-main {
+	padding-top: 100px;
+	padding-bottom: 60px;
+	background-color: var(--main-color);
+
+	.container {
+		text-align: center;
+
+		.center-box {
+			padding: 0 10px;
+			.title-box {
+				.title {
+					font-size: 3rem;
+					font-family: var(--lexen-font);
+					font-weight: 300;
+					color: var(--light-black);
+				}
+			}
+
+			.text-box-title {
+				margin: 0 auto;
+				padding: 40px 0;
+				max-width: 290px;
+				color: var(--light-black);
+				.text {
+					font-size: 1.8rem;
+					font-family: var(--open-font);
+					line-height: 28px;
+
+					span {
+						font-family: var(--lexen-font);
+						font-weight: bold;
+					}
+				}
+			}
+
+			.price-box {
+				margin: 0 auto;
+				max-width: 250px;
+				.price-title {
+					font-size: 3rem;
+					font-family: var(--lexen-font);
+					font-weight: 300;
+					color: var(--light-black);
+				}
+
+				.text-box {
+					padding: 40px 0;
+					.text {
+						font-size: 1.8rem;
+						line-height: 28px;
+						font-family: var(--open-font);
+					}
+				}
+			}
+		}
+	}
+}
+
 .footer {
+	position: relative;
 	background-image: url('https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/.CURRENT_LIB/2000_jzq006_img_1bc6cb525d1ed1a134f8ba75d94d0111.webp');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	box-shadow: 0px -1px 7px rgba(145, 145, 145, 1);
+	z-index: 1000;
 
 	.container {
 		margin: 0 auto;
@@ -689,6 +750,9 @@ body {
 			}
 		}
 		.medium {
+			display: none;
+		}
+		.large {
 			display: none;
 		}
 		.footer-text {

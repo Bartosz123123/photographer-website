@@ -156,6 +156,30 @@
 		}
 	}
 
+	.price-main {
+		padding-top: 140px;
+		.container {
+			.center-box {
+				.title-box {
+					.title {
+						font-size: 3.4rem;
+					}
+				}
+				.text-box-title {
+					max-width: 748px;
+				}
+				.price-box {
+					padding-top: 30px;
+					max-width: 577px;
+
+					.price-title {
+						font-size: 3.4rem;
+					}
+				}
+			}
+		}
+	}
+
 	.footer {
 		.container {
 			max-width: 768px;
