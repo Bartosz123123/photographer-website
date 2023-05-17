@@ -638,7 +638,7 @@ body {
 
 .price-main {
 	padding-top: 100px;
-	padding-bottom: 60px;
+	// padding-bottom: 60px;
 	background-color: var(--main-color);
 
 	.container {
@@ -691,6 +691,35 @@ body {
 					}
 				}
 			}
+		}
+	}
+	.price-banner {
+		// margin: 15px 0;
+		margin-top: 15px;
+		width: 100%;
+		height: 287px;
+		.banner {
+			width: 100%;
+			height: 100%;
+			background-image: url('https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_5/l5akolj9/element_78/slub-wroclaw-fotograf.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+.contact-main {
+	.contact-banner {
+		height: 289px;
+		width: 100%;
+		.banner {
+			height: 100%;
+			width: 100%;
+			background-image: url('https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_4/l5akolos/element_145/zdj-fotograf.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
 		}
 	}
 }
