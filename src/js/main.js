@@ -25,6 +25,61 @@ const popupArrowLeft = document.querySelector('.popup-arrow-left');
 const body = document.querySelector('.body');
 let currentImageIndex;
 
+const username = document.querySelector('#username');
+const email = document.querySelector('#email');
+const data = document.querySelector('#date');
+const place = document.querySelector('#place');
+const sendBtn = document.querySelector('.send-btn');
+const error = document.querySelectorAll('.error-text');
+const clearBtn = document.querySelector('.clear-btn');
+
+const checkMail = (email) => {
+	const re =
+		/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+	if (re.test(email.value)) {
+		clearError();
+	} else {
+		showError(email, 'E-mail jest niepoprawny');
+	}
+};
+
+const checkLength = (input, min) => {
+	if (input.value.length < min) {
+		showError(
+			input,
+			`${input.previousElementSibling.innerText} składa się z min. ${min} znaków.`
+		);
+	}
+};
+
+const showError = (input, msg) => {
+	if (input && input.parentElement) {
+		const formBox = input.parentElement;
+		const errorMsg = formBox.querySelector('.error-text');
+
+		formBox.classList.add('error');
+		errorMsg.textContent = msg;
+	}
+};
+
+const clearError = (input) => {
+	if (input && input.parentElement) {
+		const formBox = input.parentElement;
+		formBox.classList.remove('error');
+	}
+};
+
+const checkForm = (input) => {
+	input.forEach((el) => {
+		if (el.value === '') {
+			showError(el, el.placeholder);
+		} else {
+			clearError(el);
+		}
+	});
+};
+
 const handleRightArrowPopup = () => {
 	if (currentImageIndex === thumbnails.length - 1) {
 		currentImageIndex = 0;
@@ -125,55 +180,79 @@ window.addEventListener('scroll', () => {
 });
 
 document.addEventListener('keydown', (e) => {
-	if (!popup.classList.contains('popup-hidden')) {
-		if (e.key === 'ArrowRight' || e.keyCode === 39) {
-			handleRightArrowPopup();
-		} else if (e.key === 'ArrowLeft' || e.keyCode === 37) {
-			handleLeftArrowPopup();
-		} else if (e.key === 'Escape' || e.keyCode === 27) {
-			closePopup();
+	if (popup !== null) {
+		if (!popup.classList.contains('popup-hidden')) {
+			if (e.key === 'ArrowRight' || e.keyCode === 39) {
+				handleRightArrowPopup();
+			} else if (e.key === 'ArrowLeft' || e.keyCode === 37) {
+				handleLeftArrowPopup();
+			} else if (e.key === 'Escape' || e.keyCode === 27) {
+				closePopup();
+			}
 		}
 	}
 });
 
-thumbnails.forEach((thumbnail, index) => {
-	thumbnail.addEventListener('click', (e) => {
-		popup.classList.remove('popup-hidden');
-		imgInPopup.src = e.target.src;
-		body.classList.add('body-hidden');
-		currentImageIndex = index;
+if (thumbnails !== null) {
+	thumbnails.forEach((thumbnail, index) => {
+		thumbnail.addEventListener('click', (e) => {
+			popup.classList.remove('popup-hidden');
+			imgInPopup.src = e.target.src;
+			body.classList.add('body-hidden');
+			currentImageIndex = index;
+		});
 	});
-});
+}
 
-// popupArrowRight.addEventListener('click', handleRightArrowPopup);
-if (popupArrowRight) {
+if (popupArrowRight !== null) {
 	popupArrowRight.addEventListener('click', handleRightArrowPopup);
 }
 
-if (popupArrowLeft) {
+if (popupArrowLeft !== null) {
 	popupArrowLeft.addEventListener('click', handleLeftArrowPopup);
 }
-if (closePopupBtn) {
+if (closePopupBtn !== null) {
 	closePopupBtn.addEventListener('click', closePopup);
 }
-if (showAllBtn) {
+if (showAllBtn !== null) {
 	showAllBtn.addEventListener('click', swapGalleryAndCarousel);
 }
-if (leftBtn) {
+if (leftBtn !== null) {
 	leftBtn.addEventListener('click', handleLeftArrow);
 }
-if (rightBtn) {
+if (rightBtn !== null) {
 	rightBtn.addEventListener('click', handleRightArrow);
 }
 document.addEventListener('scroll', handleArrowOnScroll);
-burgerBtn.addEventListener('click', handleNav);
-// popup.addEventListener('click', () =>
-// 	e.target === popup ? closePopup() : false
-// );
-if (popup) {
+
+if (burgerBtn !== null) {
+	burgerBtn.addEventListener('click', handleNav);
+}
+
+if (popup !== null) {
 	popup.addEventListener('click', (e) => {
 		if (e.target === popup) {
 			closePopup();
 		}
+	});
+}
+
+if (clearBtn !== null) {
+	clearBtn.addEventListener('click', (e) => {
+		e.preventDefault();
+
+		[username, email, data, place].forEach((el) => {
+			el.value = '';
+		});
+	});
+}
+
+if (sendBtn !== null) {
+	sendBtn.addEventListener('click', (e) => {
+		e.preventDefault();
+
+		checkForm([username, email, data, place]);
+		checkLength(username, 3);
+		checkMail(email);
 	});
 }
