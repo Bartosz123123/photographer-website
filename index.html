@@ -7,255 +7,300 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona główna</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&family=Open+Sans&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="/dist/css/main.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 
 <body class="body">
 
     <nav class="nav">
-    <div class="nav-bar ">
-        <div class="img-box">
-            <a href="#" class="link">
-                <img src="https://szablon2.lewdesign.pl/lib/jzq006/logo-foto-gotowe-l4ntx942.svg" alt="" class="img">
-            </a>
+        <div class="nav-bar ">
+            <div class="img-box">
+                <a href="#" class="link">
+                    <img src="https://szablon2.lewdesign.pl/lib/jzq006/logo-foto-gotowe-l4ntx942.svg" alt=""
+                        class="img">
+                </a>
+            </div>
+
+            <button class="burger-btn mobile-btn">
+                <div class="bar"></div>
+            </button>
+
+            <ul class="desktop">
+                <li class="items"><a href="index.html">Strona główna</a></li>
+                <li class="items test"><a href="portfolio.html">Portfolio</a></li>
+                <li class="items"><a href="price.html">Cennik</a></li>
+                <li class="items"><a href="contact.html">Kontakt</a></li>
+            </ul>
+
+        </div>
+        <div class="dropdown mobile-dropdown">
+            <ul>
+                <li class="item"><a href="index.html">Strona główna</a></li>
+                <li class="item"><a href="portfolio.html">Portfolio</a></li>
+                <li class="item"><a href="price.html">Cennik</a></li>
+                <li class="item"><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="hero-img parallax-hero">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down" width="24"
+                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 5l0 14"></path>
+                <path d="M18 13l-6 6"></path>
+                <path d="M6 13l6 6"></path>
+            </svg>
+
+        </div>
+        <div class="hero-img medium-hero">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down" width="24"
+                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 5l0 14"></path>
+                <path d="M18 13l-6 6"></path>
+                <path d="M6 13l6 6"></path>
+            </svg>
         </div>
 
-        <button class="burger-btn mobile-btn">
-            <div class="bar"></div>
-        </button>
 
-        <ul class="desktop">
-            <li class="items"><a href="index.html">Strona główna</a></li>
-            <li class="items test"><a href="portfolio.html">Portfolio</a></li>
-            <li class="items"><a href="price.html">Cennik</a></li>
-            <li class="items"><a href="contact.html">Kontakt</a></li>
-        </ul>
-
-    </div>
-    <div class="dropdown mobile-dropdown">
-        <ul>
-            <li class="item"><a href="index.html">Strona główna</a></li>
-            <li class="item"><a href="portfolio.html">Portfolio</a></li>
-            <li class="item"><a href="price.html">Cennik</a></li>
-            <li class="item"><a href="contact.html">Kontakt</a></li>
-        </ul>
-    </div>
-</nav>
-    <main class="main">
-    <div class="hero-img parallax-hero">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down" width="24" height="24"
-            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M12 5l0 14"></path>
-            <path d="M18 13l-6 6"></path>
-            <path d="M6 13l6 6"></path>
-        </svg>
-
-    </div>
-    <div class="hero-img medium-hero">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down" width="24" height="24"
-            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M12 5l0 14"></path>
-            <path d="M18 13l-6 6"></path>
-            <path d="M6 13l6 6"></path>
-        </svg>
-    </div>
-
-
-    <section class="emotions">
-        <div class="container">
-            <div class="title-box">
-                <h2 class="section-title">Fotografia to emocje</h2>
-            </div>
-            <div class="img-box">
-                <div class="frame-img">
-                    <!-- <img class="img"
+        <section class="emotions">
+            <div class="container">
+                <div class="title-box">
+                    <h2 class="section-title">Fotografia to emocje</h2>
+                </div>
+                <div class="img-box">
+                    <div class="frame-img">
+                        <!-- <img class="img"
                         src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_10/wroclaw-najlepszy-fotograf.jpg"
                         alt=""> -->
-                    <div class="img"></div>
-                </div>
+                        <div class="img"></div>
+                    </div>
 
-                <div class="area-text">
-                    <h3 class="title">Fotograf z Wrocławia</h3>
-                    <p class="text">Rodzinna sesja Państwa Sokal Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod.</p>
-                    <p class="text">Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco.</p>
+                    <div class="area-text">
+                        <h3 class="title">Fotograf z Wrocławia</h3>
+                        <p class="text">Rodzinna sesja Państwa Sokal Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod.</p>
+                        <p class="text">Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco.</p>
 
-                    <button class="btn"><span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30"
-                                height="30" viewBox="0 0 24 24" style="fill: #fff;">
-                                <path
-                                    d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z">
-                                </path>
-                            </svg></span> 123 000 456</button>
+                        <button class="btn"><span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="30"
+                                    height="30" viewBox="0 0 24 24" style="fill: #fff;">
+                                    <path
+                                        d="m20.487 17.14-4.065-3.696a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a.997.997 0 0 0-.085-1.39z">
+                                    </path>
+                                </svg></span> 123 000 456</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="second-hero parallax-hero"></div>
-    <div class="second-hero medium-hero"></div>
+        <div class="second-hero parallax-hero"></div>
+        <div class="second-hero medium-hero"></div>
 
-    <div class="section-portfolio">
-        <div class="container">
-            <div class="title-box">
-                <h2 class="section-title">Portfolio</h2>
-            </div>
+        <div class="section-portfolio">
+            <div class="container">
+                <div class="title-box">
+                    <h2 class="section-title">Portfolio</h2>
+                </div>
 
-            <div class="slider">
-                <div class="slider-box">
+                <div class="slider">
+                    <div class="slider-box">
+                        <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/0/unsplash-image.jpg"
+                            alt="Para młoda" class="slider-img">
+
+                        <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/1/rodzina-zdjecia-fotograf-wroclaw.jpg"
+                            alt="Szczęśliwy ojciec z dziećmi" class="slider-img">
+
+                        <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/2/unsplash-image.jpg"
+                            alt="Para młoda przytulająca się na łonie natury" class="slider-img">
+
+                        <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/3/unsplash-image.jpg"
+                            alt="Para patrząca na krajobraz gór i lasów " class="slider-img">
+
+                        <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/4/unsplash-image.jpg"
+                            alt="Dziewczyna biegnie przez las" class="slider-img">
+
+                        <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/5/sluby-wroclaw-super-dobry-fotograf.jpg"
+                            alt="Para młoda uśmiechająca się do siebie" class="slider-img">
+
+                        <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/6/unsplash-image.jpg"
+                            alt="Matka trzymająca rękę swojego dziecka i uśmiechająca się do niego" class="slider-img">
+
+                        <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/7/unsplash-image.jpg"
+                            alt="Para siedząca przy ognisku nad morzem wieczorem" class="slider-img">
+                    </div>
+
+                    <button class="btn btn-left"><span>&lt;</span></button>
+                    <button class="btn btn-right"><span>&gt;</span></button>
+                </div>
+
+                <div class="gallery">
                     <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/0/unsplash-image.jpg"
-                        alt="Para młoda" class="slider-img">
+                        alt="Para młoda" id="first-img" class="gallery-img">
 
                     <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/1/rodzina-zdjecia-fotograf-wroclaw.jpg"
-                        alt="Szczęśliwy ojciec z dziećmi" class="slider-img">
+                        alt="Szczęśliwy ojciec z dziećmi" id="second-img" class="gallery-img">
 
                     <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/2/unsplash-image.jpg"
-                        alt="Para młoda przytulająca się na łonie natury" class="slider-img">
+                        alt="Para młoda przytulająca się na łonie natury" id="third-img" class="gallery-img">
 
                     <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/3/unsplash-image.jpg"
-                        alt="Para patrząca na krajobraz gór i lasów " class="slider-img">
+                        alt="Para patrząca na krajobraz gór i lasów " id="fourth-img" class="gallery-img">
 
                     <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/4/unsplash-image.jpg"
-                        alt="Dziewczyna biegnie przez las" class="slider-img">
+                        alt="Dziewczyna biegnie przez las" id="fiveth-img" class="gallery-img">
 
                     <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/5/sluby-wroclaw-super-dobry-fotograf.jpg"
-                        alt="Para młoda uśmiechająca się do siebie" class="slider-img">
+                        alt="Para młoda uśmiechająca się do siebie" id="sixth-img" class="gallery-img">
 
                     <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/6/unsplash-image.jpg"
-                        alt="Matka trzymająca rękę swojego dziecka i uśmiechająca się do niego" class="slider-img">
+                        alt="Matka trzymająca rękę swojego dziecka i uśmiechająca się do niego" id="seventh-img"
+                        class="gallery-img">
 
                     <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/7/unsplash-image.jpg"
-                        alt="Para siedząca przy ognisku nad morzem wieczorem" class="slider-img">
+                        alt="Para siedząca przy ognisku nad morzem wieczorem" id="eighth-img" class="gallery-img">
                 </div>
 
-                <button class="btn btn-left"><span>&lt;</span></button>
-                <button class="btn btn-right"><span>&gt;</span></button>
+                <div class="popup popup-hidden">
+                    <button aria-label="Zamknij popup" class="close-popup">X</button>
+                    <img src="" alt="" class="popup-img">
+                    <button aria-label="Następne zdjęcie" class="btn popup-arrow-left"><span>&lt;</span></button>
+                    <button aria-label="Poprzednie zdjęcie" class="btn popup-arrow-right"><span>&gt;</span></button>
+                </div>
+
+                <div class="btn-box">
+                    <button class="show-all">Pokaż wszystko</button>
+                </div>
+
             </div>
-
-            <div class="gallery">
-                <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/0/unsplash-image.jpg"
-                    alt="Para młoda" id="first-img" class="gallery-img">
-
-                <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/1/rodzina-zdjecia-fotograf-wroclaw.jpg"
-                    alt="Szczęśliwy ojciec z dziećmi" id="second-img" class="gallery-img">
-
-                <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/2/unsplash-image.jpg"
-                    alt="Para młoda przytulająca się na łonie natury" id="third-img" class="gallery-img">
-
-                <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/3/unsplash-image.jpg"
-                    alt="Para patrząca na krajobraz gór i lasów " id="fourth-img" class="gallery-img">
-
-                <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/4/unsplash-image.jpg"
-                    alt="Dziewczyna biegnie przez las" id="fiveth-img" class="gallery-img">
-
-                <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/5/sluby-wroclaw-super-dobry-fotograf.jpg"
-                    alt="Para młoda uśmiechająca się do siebie" id="sixth-img" class="gallery-img">
-
-                <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/6/unsplash-image.jpg"
-                    alt="Matka trzymająca rękę swojego dziecka i uśmiechająca się do niego" id="seventh-img"
-                    class="gallery-img">
-
-                <img src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_102/7/unsplash-image.jpg"
-                    alt="Para siedząca przy ognisku nad morzem wieczorem" id="eighth-img" class="gallery-img">
-            </div>
-
-            <div class="popup popup-hidden">
-                <button aria-label="Zamknij popup" class="close-popup">X</button>
-                <img src="" alt="" class="popup-img">
-                <button aria-label="Następne zdjęcie" class="btn popup-arrow-left"><span>&lt;</span></button>
-                <button aria-label="Poprzednie zdjęcie" class="btn popup-arrow-right"><span>&gt;</span></button>
-            </div>
-
-            <div class="btn-box">
-                <button class="show-all">Pokaż wszystko</button>
-            </div>
-
         </div>
-    </div>
 
-    <div class="third-hero second-hero parallax-hero"></div>
-    <div class="third-hero second-hero medium-hero"></div>
+        <div class="third-hero second-hero parallax-hero"></div>
+        <div class="third-hero second-hero medium-hero"></div>
 
-    <section class="emotions for-you">
-        <div class="container">
-            <div class="title-box">
-                <h2 class="section-title">Fotografia to emocje</h2>
-            </div>
-            <div class="img-box">
-                <div class="frame-img">
-                    <!-- <img class="img"
+        <section class="emotions for-you">
+            <div class="container">
+                <div class="title-box">
+                    <h2 class="section-title">Fotografia to emocje</h2>
+                </div>
+                <div class="img-box">
+                    <div class="frame-img">
+                        <!-- <img class="img"
                         src="https://szablon2.lewdesign.pl/files/dynamicContent/sites/jzq006/images/pl/webpage_1/l5akom3v/element_10/wroclaw-najlepszy-fotograf.jpg"
                         alt=""> -->
-                    <div class="img"></div>
-                </div>
+                        <div class="img"></div>
+                    </div>
 
-                <div class="area-text">
-                    <h3 class="title">Naturalnie piękne sesje ślubne</h3>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco.</p>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore.</p>
+                    <div class="area-text">
+                        <h3 class="title">Naturalnie piękne sesje ślubne</h3>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco.</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore.</p>
 
-                    <button class="btn">Rezerwuję termin</button>
+                        <button class="btn">Rezerwuję termin</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-</main>
+    </main>
     <footer class="footer">
-    <div class="container">
-        <div class="box small">
-            <div class="boxes img"></div>
-            <div class="boxes text-box">
-                <p class="text">Jan Kowalski</p>
-                <p class="text">Email: fotograf@jankowalski.pl</p>
-                <p class="text">tel: 123 000 456</p>
+        <div class="container">
+            <div class="box small">
+                <div class="boxes img"></div>
+                <div class="boxes text-box">
+                    <p class="text">Jan Kowalski</p>
+                    <p class="text">Email: fotograf@jankowalski.pl</p>
+                    <p class="text">tel: 123 000 456</p>
+                </div>
+                <div class="boxes social-box">
+                    <a href="#" class="social-links fb"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                        </svg></a>
+                    <a href="#" class="social-links ig"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z">
+                            </path>
+                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                            <path d="M16.5 7.5l0 .01"></path>
+                        </svg></a>
+                    <a href="#" class="social-links pinterest"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-pinterest" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M8 20l4 -9"></path>
+                            <path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7">
+                            </path>
+                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                        </svg></a>
+                </div>
             </div>
-            <div class="boxes social-box">
-                <a href="#" class="social-links fb"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24"
-                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
-                    </svg></a>
-                <a href="#" class="social-links ig"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24"
-                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                        <path d="M16.5 7.5l0 .01"></path>
-                    </svg></a>
-                <a href="#" class="social-links pinterest"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-pinterest" width="24" height="24" viewBox="0 0 24 24"
-                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M8 20l4 -9"></path>
-                        <path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7">
-                        </path>
-                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                    </svg></a>
+            <div class="box medium">
+                <div class="boxes text-box">
+                    <p class="text">Jan Kowalski</p>
+                    <p class="text">Email: fotograf@jankowalski.pl</p>
+                    <p class="text">tel: 123 000 456</p>
+                </div>
+                <div class="mini-container">
+
+                    <div class="boxes img"></div>
+                    <div class="boxes social-box">
+                        <a href="#" class="social-links fb"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3">
+                                </path>
+                            </svg></a>
+                        <a href="#" class="social-links ig"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z">
+                                </path>
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M16.5 7.5l0 .01"></path>
+                            </svg></a>
+                        <a href="#" class="social-links pinterest"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-pinterest" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M8 20l4 -9"></path>
+                                <path
+                                    d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7">
+                                </path>
+                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                            </svg></a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="box medium">
-            <div class="boxes text-box">
-                <p class="text">Jan Kowalski</p>
-                <p class="text">Email: fotograf@jankowalski.pl</p>
-                <p class="text">tel: 123 000 456</p>
-            </div>
-            <div class="mini-container">
+            <div class="box large">
+                <div class="boxes text-box">
+                    <p class="text">Jan Kowalski</p>
+                    <p class="text">Email: fotograf@jankowalski.pl</p>
+                    <p class="text">tel: 123 000 456</p>
+                </div>
 
                 <div class="boxes img"></div>
                 <div class="boxes social-box">
@@ -287,55 +332,17 @@
                             <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
                         </svg></a>
                 </div>
-            </div>
-        </div>
-        <div class="box large">
-            <div class="boxes text-box">
-                <p class="text">Jan Kowalski</p>
-                <p class="text">Email: fotograf@jankowalski.pl</p>
-                <p class="text">tel: 123 000 456</p>
-            </div>
 
-            <div class="boxes img"></div>
-            <div class="boxes social-box">
-                <a href="#" class="social-links fb"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24"
-                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
-                    </svg></a>
-                <a href="#" class="social-links ig"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24"
-                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z">
-                        </path>
-                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                        <path d="M16.5 7.5l0 .01"></path>
-                    </svg></a>
-                <a href="#" class="social-links pinterest"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-pinterest" width="24" height="24" viewBox="0 0 24 24"
-                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M8 20l4 -9"></path>
-                        <path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7">
-                        </path>
-                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                    </svg></a>
             </div>
-
+            <div class="footer-text">
+                <p class="text">Do stworzenia strony wykorzystano <a href="#" class="link">kreator stron www </a><a
+                        href="#" class="link">WebWave</a>,</p>
+                <p class="text">potrzebujesz pomocy w edycji szablony? <a href="#" class="link">Zapraszam
+                        kreacyjna.pl</a>
+                </p>
+            </div>
         </div>
-        <div class="footer-text">
-            <p class="text">Do stworzenia strony wykorzystano <a href="#" class="link">kreator stron www </a><a href="#"
-                    class="link">WebWave</a>,</p>
-            <p class="text">potrzebujesz pomocy w edycji szablony? <a href="#" class="link">Zapraszam kreacyjna.pl</a>
-            </p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 
 
